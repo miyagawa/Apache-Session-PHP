@@ -7,3 +7,4 @@ lib/Apache/Session/Serialize/PHP.pm
 lib/Apache/Session/Store/PHP.pm
 t/00_compile.t
 t/01_session.t
+t/02_trunc.t
