@@ -2,7 +2,7 @@ package Apache::Session::Store::PHP;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.03;
+$VERSION = 0.04;
 
 use Apache::Session::File;
 
@@ -17,7 +17,10 @@ sub new {
 sub _file {
     my($self, $session) = @_;
     my $directory = $session->{args}->{SavePath} || '/tmp';
-    return $directory.'/sess_'.$session->{data}->{_session_id};
+    my $file = $directory.'/sess_'.$session->{data}->{_session_id};
+    ## taint safe
+    ( $file ) = $file =~ /^(.*)$/;
+    return( $file );
 }
 
 sub insert {

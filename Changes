@@ -2,6 +2,8 @@ Revision history for Perl extension Apache::Session::PHP
 
 0.04  Sat Aug 24 05:02:37 JST 2002
 	- Added test for 0.04 fix
+	* Now it works under tainting mode
+	  Thanks to Ed Summers
 
 0.03  Sat Aug 24 04:34:44 JST 2002
 	* Fixed bug that previous session is not correctly cleared
