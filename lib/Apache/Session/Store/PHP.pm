@@ -2,7 +2,7 @@ package Apache::Session::Store::PHP;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 use Apache::Session::File;
 
@@ -37,7 +37,7 @@ sub _write {
         die "Object already exists in the data store";
     }
 
-    my $fh = IO::File->new($self->_file($session), O_RDWR|O_CREAT)
+    my $fh = IO::File->new(">".$self->_file($session))
         or die "Could not open file: $!";
     flock $fh, LOCK_EX;
     $fh->print($session->{serialized});

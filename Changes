@@ -1,5 +1,9 @@
 Revision history for Perl extension Apache::Session::PHP
 
+0.03  Sat Aug 24 04:34:44 JST 2002
+	* Fixed bug that previous session is not correctly cleared
+	  (Thanks to Andy Lester <andy@petdance.com>)
+
 0.02  Wed Mar 27 03:16:44 JST 2002
 	- CPAN upload problem
 

@@ -2,7 +2,7 @@ package Apache::Session::PHP;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 use Apache::Session;
 use base qw(Apache::Session);
@@ -42,7 +42,7 @@ Apache::Session::PHP - glues Apache::Session with PHP::Session
 =head1 DESCRIPTION
 
 Apache::Session::PHP is an adapter of Apache::Session for
-PHP::Session. It uses following combination of straregies:
+PHP::Session. It uses following combination of strategies:
 
 =over 4
 
