@@ -2,7 +2,7 @@ package Apache::Session::Store::PHP;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 use Apache::Session::File;
 

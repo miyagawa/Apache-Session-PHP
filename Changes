@@ -1,4 +1,7 @@
 Revision history for Perl extension Apache::Session::PHP
 
+0.02  Wed Mar 27 03:16:44 JST 2002
+	- CPAN upload problem
+
 0.01  Wed Mar 27 02:00:47 2002
 	- original version
